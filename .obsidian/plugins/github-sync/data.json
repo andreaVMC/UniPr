@@ -1,6 +1,9 @@
 {
+  "remoteURL": "https://github.com/andreaVMC/UniPr.git",
+  "gitLocation": "",
+  "syncinterval": 0,
+  "isSyncOnLoad": true,
   "ghUsername": "andreaVMC",
   "ghPersonalAccessToken": "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",
-  "ghRepoUrl": "github.com/andreaVMC/Scuola",
-  "gitLocation": ""
+  "ghRepoUrl": "github.com/andreaVMC/Scuola"
 }
