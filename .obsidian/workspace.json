@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "441909a35d35e0bd",
+    "type": "split",
+    "children": [
+      {
+        "id": "abef554427ae1e72",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "974fb2c9dc3996e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "analisi 1/Appunti.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2659526db0cc6a2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "07ab4fce2001e174",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b065391aa1ae7a23",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7c9c0fe9afe988f3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b19bc6faab67735a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "a54192e852c363df",
+    "type": "split",
+    "children": [
+      {
+        "id": "53c819bfec3776f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b52b0bd3221ac75",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "analisi 1/Appunti.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "26d23f9afb21b8a4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "analisi 1/Appunti.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "194aeff180233d0b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0f194099a294d14f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "analisi 1/Appunti.md"
+              }
+            }
+          },
+          {
+            "id": "0b190319f196321d",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "github-sync:Sync with Remote": false
+    }
+  },
+  "active": "974fb2c9dc3996e1",
+  "lastOpenFiles": [
+    "analisi 1/pdf/Appunti.pdf",
+    "analisi 1/pdf/versione1.pdf",
+    "analisi 1/Appunti.md",
+    "analisi 1/pdf",
+    "analisi 1/Nuova cartella",
+    "analisi 1/sda.md",
+    "analisi 1/ciao.md",
+    "Lezione 0.md",
+    "analisi 1/img/immagine & contro.md"
+  ]
+}

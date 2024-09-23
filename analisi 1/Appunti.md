@@ -77,4 +77,3 @@ $$
 $$
 
 se la funzione è biunivoca possiamo ricavarne l'inversa $f^{-1}(b)=a$ rappresentando la funzione inversa: $$f^{-1}:B\to A, f^{-1}(b)=a \implies f(a)=b$$
-
