@@ -133,13 +133,13 @@ $$\mid a\mid = \begin{cases}  a \to a\geq 0 \\ \\
 -a \to a\leq 0
 \end{cases}$$
 il grafico di tale funzione quindi sarà rappresentato solo nella parte positiva del grafico, dove la parte negativa verrà specchiata sull'asse delle ordinate, quindi prendendo in considerazione $\mid x \mid$ :
-![[Pasted image 20240925110130.png]]
+![[Pasted image 20240925110130 1.png]]
 
 ### Propietà
 - $\mid a\mid=0 \to a=0$
 - $-\mid a\mid\leq a\leq\mid a\mid$
 - $\mid-a\mid=\mid a\mid$
-- se $\mid a\mid \leq b$  allora $-b \leq a \leq b$ , con $b$ che necessariamente de essere $b\geq0$ ![[Pasted image 20240925111519.png]]
+- se $\mid a\mid \leq b$  allora $-b \leq a \leq b$ , con $b$ che necessariamente de essere $b\geq0$ ![[Pasted image 20240925111519 1.png]]
  
 ### disuguaglianze triangolari
 #### prima
