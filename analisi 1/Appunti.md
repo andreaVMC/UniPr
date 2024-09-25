@@ -127,3 +127,52 @@ di conseguenza seguendo questi ultimi ragionamenti e leggi troveremo come i, cos
 
 -------------
 
+## Funzioni valore assoluto
+La funzione valore assoluto $f$ restituisce il valore massimo tra la $a$ fornita alla funzione ed il suo opposto, quindi: $f(a) = max(a,-a) \to \mid a\mid$ ; di conseguenza avremo che la funzione si comporta nella seguente maniera: 
+$$\mid a\mid = \begin{cases}  a \to a\geq 0 \\ \\
+-a \to a\leq 0
+\end{cases}$$
+il grafico di tale funzione quindi sarà rappresentato solo nella parte positiva del grafico, dove la parte negativa verrà specchiata sull'asse delle ordinate, quindi prendendo in considerazione $\mid x \mid$ :
+![[Pasted image 20240925110130.png]]
+
+### Propietà
+- $\mid a\mid=0 \to a=0$
+- $-\mid a\mid\leq a\leq\mid a\mid$
+- $\mid-a\mid=\mid a\mid$
+- se $\mid a\mid \leq b$  allora $-b \leq a \leq b$ , con $b$ che necessariamente de essere $b\geq0$ ![[Pasted image 20240925111519.png]]
+ 
+### disuguaglianze triangolari
+#### prima
+>la prima disuguaglianza triangolare afferma che per ogni $a,b$ appartenenti all'insieme $\mathbb{R}$, il valore assoluto di $a+b$  è minore o uguale al valore assoluto di $a$ più il valore assoluto di $b$:
+
+dimostrazione: 
+$$\forall a,b \in \mathbb{R} \mid a+b\mid \leq \mid a\mid+\mid b\mid$$
+$$\begin{cases} 
+-\mid a\mid\leq a\leq\mid a\mid \\
+-\mid b\mid\leq b\leq\mid b\mid
+\end{cases}= -(\mid a\mid+\mid b\mid)\leq a+b\leq\mid a\mid+\mid b\mid$$
+$$\mid a\mid\leq b \implies -b\leq a\leq b$$
+$$A=\mid a+b\mid, B=\mid a\mid+\mid b\mid \to\mid A\mid\leq\mid B\mid
+$$
+$$A\leq B = \mid a+b\mid\leq\mid a\mid+\mid b\mid$$
+### seconda
+>la seconda disuguaglianza triangola **di continuità** afferma che il valore assoluto della differenza degl'assoluti di $a$ e $b$, per intenderci:  $\mid(\mid a\mid-\mid b\mid)\mid$ , è minore o uguale alla differenza assoluta tra i due
+
+$$\forall a,b \in \mathbb{R} \mid\mid a\mid-\mid b\mid\mid \leq\mid a-b\mid$$
+che andiamo a dimostrare utilizzando la prima disuguaglianza triangolare abbiamo:
+$$\mid a\mid=\mid(a-b)+b\mid\leq\mid a-b\mid+\mid b\mid$$
+qua andiamo ad utilizzare la prima disuguaglianza triangolare, e tenendo presente $-B\leq A\leq B$ andiamo a verificare entrambi i simboli:
+- prima verifichiamo $A\leq B$ con:
+$$\mid a\mid-\mid b\mid\leq \mid a-b\mid$$
+qua come possiamo vedere $\mid a-b\mid = B,\mid a\mid-\mid b\mid=A$, di conseguenza $A\leq B$
+
+- poi verifichiamo $-B \leq A$ prendendo l'opposto di $\mid a-b\mid$ ovvero $-B$ che è  $-\mid a-b\mid$
+   $$-\mid a-b\mid\leq\mid a\mid-\mid b\mid$$
+cosi da ottenere appunto $-B\leq A$
+
+Infine otterremo cosi che $-\mid a-b\mid\leq \mid a\mid - \mid b\mid \leq \mid a-b\mid$, ovvero, tenendo presente della nostra notazione: $\mid a-b\mid = B,\mid a\mid-\mid b\mid=A$:
+$$-B\leq A\leq B$$
+e grazie a questa proprietà della funzione assoluta verifichiamo la seconda disuguaglianza triangolare di continuità.
+
+### ==ricopiare esempi di esercizi==
+
