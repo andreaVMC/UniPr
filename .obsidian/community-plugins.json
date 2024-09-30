@@ -9,7 +9,6 @@
   "dataview",
   "editing-toolbar",
   "cm-editor-syntax-highlight-obsidian",
-  "github-sync",
   "highlightr-plugin",
   "obsidian-icon-folder",
   "obsidian-icons-plugin",
@@ -20,5 +19,6 @@
   "obsidian-outliner",
   "obsidian-release-timeline",
   "obsidian-style-settings",
-  "obsidian-banners"
+  "obsidian-banners",
+  "fit"
 ]
