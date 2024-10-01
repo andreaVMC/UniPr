@@ -43,3 +43,40 @@ Quindi noi dovremo ==convertire segnali Analogici in Digitali attraverso una ser
 - **codifica**: prende i valori dei vari frammenti temporali e crea il segnale digitale finale
 
 ![[Pasted image 20240923101815.png]]
+
+------------
+
+## Distanza di Hamming
+==La distanza di hamming è il numero di bit diversi che hanno due codifiche di numeri==, per esempio avendo 1 e 2 in binario su una codifica di 5 bit avremo che la distanza di hamming sarà di 2 in quanto:
+$$1_{10}=00001_{2}$$
+$$2_{10}=00010_{2}$$
+qua vediamo che sia il primo che il secondo bit sono diversi, quindi 2 bit diversi, quindi la distanza di hamming è 2. ==Viene utilizzata per sistemare errori di trasmissione.==
+
+## Codice di Gray
+deve essre rispettata la regola che due elementi consecutivi che hanno una codifica con distanza di hamming pari ad 1; quindi non avremo più l'ordine:
+
+
+$$\begin{cases} \\
+0001\\
+0010 \\
+0011 \\
+0100 \\
+0101 \\
+0110 \\
+0111 \\
+1000 \\
+\dots
+\end{cases}$$
+ma avremo l'ordine:
+$$\begin{cases} \\
+0001\\
+0011 \\
+0010 \\
+0110 \\
+0111 \\
+0101 \\
+0100 \\
+1100 \\
+\dots
+\end{cases} \\
+$$
