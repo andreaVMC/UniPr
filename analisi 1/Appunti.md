@@ -176,3 +176,38 @@ e grazie a questa proprietà della funzione assoluta verifichiamo la seconda dis
 
 ### ==ricopiare esempi di esercizi==
 
+--------------------
+
+# Insiemi Numerici
+una relazione sull' insieme $\mathbb{X}$, che è sottoinsieme dell'insieme $\mathbb{R}$, nel piano cartesiano formato da $\mathbb{X}*\mathbb{X}$, dove troviamo due punti $x,y \in \mathbb{R}$, questi due punti si dicono in relazione
+## Relazioni di equivalenza
+una relazione di equivalenza è tale se fra i due punti in relazione ($x,y$) vengono rispettate le 3 propietà:
+- **riflessiva**: x in relazione con x, che si scrive $\forall x \in \mathbb{X} x \simeq x$
+- **simmetrica**: x in relazione con y e viceversa, si scrive $\forall x,y \in \mathbb{X} x\simeq y\implies y\simeq x$
+- **transitiva**:  x in relazione con y, y in relazione con z, quindi x in relazione con z, si scrive: $\forall x,y,z \in \mathbb{X} x\simeq y,y\simeq z \implies x\simeq z$
+
+i punti $(x,y)$ e $(x_{0},y_{0})$ sono in relazione tra loro se rispettano il criterio: $x-x_{0}=y-y_{0}$
+data questa nozione di equivalenza si dice classe di equivalenza: $[x]={y\in \mathbb{X}: y \simeq x}$
+## Relazioni d'ordine
+una relazione d'ordine tra due insieme si denota con il simbolo $\leq$ di precedenza, e si dice che un insieme X preceda nell'ordine un altro insieme se sono rispettate le propietà:
+- riflessiva
+- transitiva
+- <font color="#ff0000">anti-simmetrica</font>: ovvero $x\leq y , y\leq x \implies x=y$
+
+### esempio
+avendo $\mathbb{U} , \mathbb{X}=P(\mathbb{U})$ dove X è l'insieme della parti di U, abbiamo che $\mathbb{A},\mathbb{B} \in P{\mathbb{U}}$, da qui possiamo constatare che:
+- $\mathbb{A}\leq \mathbb{B}$ se ogni elemento di A è elemento anche di B
+- $\mathbb{A}\leq \mathbb{B}$ e $\mathbb{B}\leq \mathbb{A}$ se $\mathbb{A}= \mathbb{B}$
+- $\mathbb{A}\leq \mathbb{B}$ e $\mathbb{B}\leq \mathbb{A}$ quindi $\implies\mathbb{A}\leq \mathbb{C}$
+
+### Relazione d'ordine totale
+una relazione d'ordine si dice totale ==quando gli elementi sono confrontabili==
+
+## Insieme numeri reali
+Partendo dalla dichiarazione: $(\mathbb{X} ,+,*,\leq)$ dove il + ed il $*$ vanno ad indicarci la presenza di 4 assiomi per simbolo, mentre il $\leq$ va ad indicarci che la composizione interna dell'insieme è una relazione d'ordine totale.
+In totale gli assiomi dell'insieme dei numeri razionali $\mathbb{R}$ è composto da 11 assiomi.
+
+>Assioma: Principio evidente per sé, e che perciò non ha bisogno di esser dimostrato, posto a fondamento di una teoria deduttiva
+
+Per definire l'insieme dei numeri reali $\mathbb{N}$ bisogna definire un ==12° assioma, detto Assioma di Dedekind==, che dice che per ogni $\mathbb{A},\mathbb{B}\subset \mathbb{R}$ tali che $\forall a \in A, b \in B, a\leq b$ allora esiste un elemento $c \in \mathbb{R}$ tale da separare i due insiemi, e quindi: $\forall a \in \mathbb{A}, b \in \mathbb{B} , a\leq c\leq b$, questo viene chiamato anche ==assioma dell'elemento separatore==.
+

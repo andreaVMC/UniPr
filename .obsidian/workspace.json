@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8e24ae5ad771ec94",
+        "id": "b13ab7088c489776",
         "type": "tabs",
         "children": [
           {
-            "id": "4dcf0eba68528cbd",
+            "id": "ba7c7f7fc77cf392",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -157,9 +157,16 @@
       "fit:Fit Sync": false
     }
   },
-  "active": "4dcf0eba68528cbd",
+  "active": "ba7c7f7fc77cf392",
   "lastOpenFiles": [
+    "elettronica/pdf/Appunti.pdf",
+    "elettronica/pdf",
+    "elettronica/Nuova cartella",
+    "elettronica/Libro.pdf",
+    "elettronica/Appunti.md",
+    "Pasted image 20241008085413.png",
     "analisi 1/Appunti.md",
+    "analisi 1/img/assimo elemento separatore.md",
     "elettronica/laboratorio/appunti.md",
     "elettronica/laboratorio",
     "_fit/analisi 1/Appunti.md",
@@ -178,11 +185,8 @@
     "analisi 1/img/Pasted image 20240924221555.png",
     "analisi 1/img/Pasted image 20240924221438.png",
     "analisi 1/img/Pasted image 20240924221225.png",
-    "analisi 1/img/Pasted image 20240924221028.png",
     "analisi 1/ciao prova.md",
     "analisi 1/pdf/versione1.pdf",
-    "analisi 1/pdf",
-    "analisi 1/Nuova cartella",
     "analisi 1/sda.md",
     "analisi 1/ciao.md",
     "analisi 1/img/immagine & contro.md"

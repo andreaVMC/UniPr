@@ -79,4 +79,13 @@ $$\begin{cases} \\
 1100 \\
 \dots
 \end{cases} \\
-$$
+$$----------------
+
+## Minimizzare una rete
+Avere una rete che restituisce $y$ ed una che restituisce $y_{min}$, ciò vuol dire minimizzare una rete.
+
+>pagina 65 del libro
+### usa teoremi algebra booleana
+![[Pasted image 20241008085413.png]]
+
+--------
