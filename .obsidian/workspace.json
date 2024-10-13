@@ -13,9 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "elettronica/Appunti.md",
+                "file": "analisi 1/Appunti.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "b3ca675e3112ed0f",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "analisi 1/img/piano di gaus.md"
               }
             }
           }
@@ -85,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "elettronica/Appunti.md",
+                "file": "analisi 1/Appunti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "elettronica/Appunti.md",
+                "file": "analisi 1/Appunti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "elettronica/Appunti.md"
+                "file": "analisi 1/Appunti.md"
               }
             }
           },
@@ -159,14 +169,19 @@
   },
   "active": "ba7c7f7fc77cf392",
   "lastOpenFiles": [
+    "analisi 1/img/Pasted image 20241013154605.png",
+    "analisi 1/Pasted image 20241013154605.png",
+    "Pasted image 20241013154605.png",
+    "analisi 1/img/piano di gaus.md",
+    "analisi 1/Appunti.md",
+    "analisi 1/img/Pasted image 20241013152750.png",
+    "analisi 1/img/assimo elemento separatore.md",
+    "elettronica/Appunti.md",
     "elettronica/pdf/Appunti.pdf",
     "elettronica/pdf",
     "elettronica/Nuova cartella",
     "elettronica/Libro.pdf",
-    "elettronica/Appunti.md",
-    "Pasted image 20241008085413.png",
-    "analisi 1/Appunti.md",
-    "analisi 1/img/assimo elemento separatore.md",
+    "analisi 1/img/Pasted image 20241008085413.png",
     "elettronica/laboratorio/appunti.md",
     "elettronica/laboratorio",
     "_fit/analisi 1/Appunti.md",
@@ -182,11 +197,7 @@
     "analisi 1/img/Pasted image 20240925110130.png",
     "analisi 1/img/Pasted image 20240924222153.png",
     "analisi 1/img/Pasted image 20240924222053.png",
-    "analisi 1/img/Pasted image 20240924221555.png",
-    "analisi 1/img/Pasted image 20240924221438.png",
-    "analisi 1/img/Pasted image 20240924221225.png",
     "analisi 1/ciao prova.md",
-    "analisi 1/pdf/versione1.pdf",
     "analisi 1/sda.md",
     "analisi 1/ciao.md",
     "analisi 1/img/immagine & contro.md"

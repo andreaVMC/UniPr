@@ -210,4 +210,61 @@ In totale gli assiomi dell'insieme dei numeri razionali $\mathbb{R}$ è composto
 >Assioma: Principio evidente per sé, e che perciò non ha bisogno di esser dimostrato, posto a fondamento di una teoria deduttiva
 
 Per definire l'insieme dei numeri reali $\mathbb{N}$ bisogna definire un ==12° assioma, detto Assioma di Dedekind==, che dice che per ogni $\mathbb{A},\mathbb{B}\subset \mathbb{R}$ tali che $\forall a \in A, b \in B, a\leq b$ allora esiste un elemento $c \in \mathbb{R}$ tale da separare i due insiemi, e quindi: $\forall a \in \mathbb{A}, b \in \mathbb{B} , a\leq c\leq b$, questo viene chiamato anche ==assioma dell'elemento separatore==.
+![[assimo elemento separatore]]
 
+$\sqrt{ 2 }$ non è razionale quindi non è seperatore, per tanto è nell'insieme A o in B, sistenendo:
+$\sqrt{ 2 } \in \mathbb{R}$ e che esiste un $c \in \mathbb{Q}^{+} : c^2<2$ allora:$$\exists n \in \mathbb{N}^+:\left( c+ \frac{1}{n} \right)^2<2$$
+ciò vuol dire che c è un razionale positivo, il quale il quadrato è minore di 2, ma aggiungendo a c un infinitesimo e ne facciamo il quadrato, avremo sempre un numero <2 ma più vicino, quindi non esiste un numero separatore razionale.
+
+### Maggioranti
+Un insieme A si dice limitato superiormente se ammette maggioranti M, quindi ogni a appartenente ad A, deve essere minore di ogni elemento dell'insieme dei maggioranti:
+$$\forall a \in \mathbb{A}, a\leq M$$
+l'insieme dei maggioranti di A si indica con il simbolo: $\mathbb{M}_{\mathbb{A}}$.
+per esempio l'insieme $\mathbb{N}$ non è limitato superiormente quindi non ammette maggioranti.
+#### L'esistenza del massimo
+Oltre a ciò dobbiamo tenere inconsiderazione la possibile esistenza di un massimo dell'insieme A, mettendo caso che $\mathbb{A}=(-\infty,1]$ , ovvero l'insieme A comprende tutti i numeri da meno infinito ad 1 compreso, sappiamo perfettamente che il massimo di questo insieme sarà 1; ma mettendo il caso che $\mathbb{A}=(- \infty,1[$  allora il massimo dell'insieme A sarà un numero infinitamente vicino ad 1 ma pur sempre <1, e per l'assioma del numero separatore sappiamo che esisterà sempre un numero più vicino di un altro ad 1 ma comunque <1; quindi in questo caso l'insieme A non ha massimo.
+
+> nota bene: il massimo dell' insieme:$max(\mathbb{A})$ è uguale al minimo dell'insieme dei maggioranti dell'insieme di A: $min(\mathbb{M_{\mathbb{A}}})$ ; quindi $max(\mathbb{A})= min(\mathbb{M_{\mathbb{A}}})$
+
+### Minoranti
+stessa roba dei maggioranti vale per i minoranti, ovviamente qua parliamo di limiti inferiori e si tratta di seguire la regola: $$\forall a \in A , a\geq m$$
+#### l'esistenza del minimo 
+allo stesso modo , se abbiamo un insieme $A =]-1,+\infty)$ avremo che l'insieme A non ha un minimo in quanto per l'assioma di dedekin 
+
+> nota bene: il minimo dell' insieme:$min(\mathbb{A})$ è uguale al massimo dell'insieme dei minoranti dell'insieme di A: $max(\mathbb{m_{\mathbb{A}}})$ ; quindi $min(\mathbb{A})= max(\mathbb{m_{\mathbb{A}}})$
+
+## Insieme dei numeri immaginari e complessi
+L'insieme dei numeri immaginari serve a dare soluzione a quelle operazioni che di fatto non hanno soluzione; l'intero insieme è basato sull' equazione $x^{2} +1 =0$ che vorrebbe a dire $x = \sqrt{ -1 }$ che è impossibile negl'insiemi $\mathbb{R}$ ed $\mathbb{N}$ ,quindi si attribuisce ad una variabile immaginaria $i$ il valore di $\sqrt{ -1 }$, di conseguenza $$i^2=-1$$
+### Numeri complessi
+Un numero complesso è un numero composto da un numero reale ed un numero immaginario, quindi si dice che l'insieme dei numeri complessi $\mathbb(C)$ è composto nella seguente maniera:
+$$\mathbb{C}=\{a+bi:a,b \in \mathbb{R}\}$$
+quindi vi è un inclusione stretta di R in C; il numero complesso viene indicato dalla variabile $z$, che è di conseguenza composta dalla parte reale e dalla parte immaginaria i.
+
+##### Operazioni
+
+ - la somma tra due $z$ avviene sommando separatamente parti reali ed immaginarie: $$(3+4i)+(5-7i)=(3+5)+(4-7)i=8-3i$$
+ - la moltiplicazione tra due $z$ avviene come una semplice prodotto di somme che già conosciamo, ricordando però che $i^2=-1$ , di conseguenza: $$(3+4i)*(5-7i)=15-21i+20i-28*i^2=15-21i+20i-(28*-1)=15-i+28=43-i$$
+ - **il reciproco** di z, ovvero quello che si solito scriveremmo come $\frac{1}{z}$ viene calcolato in questo caso attraverso la formula: $$\frac{1}{z}=\frac{a}{a^2+b^2}-\frac{b}{a^2+b^2}i$$ per esempio il reciproco di z = 3+4i (ovvero quel numero che moltiplicato per z restituisce 1) lo calcoliamo cosi: $$\frac{1}{3+4i}=\frac{3}{9+16}-\frac{4}{9+16}i=\frac{3-4i}{25}$$ e possiamo verificarlo semplicemente moltiplicandolo per z. (se restituisce 1 è verificato)
+ - coniugato di z è quel numero che conserva la parte reale di Z ma ha opposta parte immaginaria, se $$z=3+4i \to\overline{z}=3-4i$$
+ - il modulo di Z si fa applicando la radice quadrata alle due parti di Z elevate entrambe alla seconda (valore assoluto), quindi: $\mid z\mid = \sqrt{ Rez^2 +Imx^2}$, per esempio: $$\mid_{3}+4i\mid=\sqrt{ 3^2+4^2 }=\sqrt{ 25 }=5$$
+##### propietà
+- $\overline{z+w} = \overline{z}+\overline{w}$
+-  $\overline{z*w} = \overline{z}*\overline{w}$
+- $\overline{\overline{z}}=z$
+- $z=-\overline{z} \implies \mathbb{Re}z = 0$
+- $\mid z\mid=\mid\overline{z}\mid$
+- $\mid z+w\mid\leq\mid z\mid+\mid w\mid$
+- $\mid z*w\mid=\mid z\mid*\mid w\mid$
+- $z*\overline{z}=\mid z\mid^2$
+- $\frac{1}{z}=\frac{\overline{z}}{\mid z\mid^2}$
+- $\frac{w}{z}=w*\frac{1}{z}=w* \frac{\overline{z}}{\mid x\mid^2}=\frac{w*\overline{z}}{\mid z\mid^2}$
+- $\mid z+w\mid^2\leq(\mid z\mid+\mid w\mid)^2$
+### Piano di Gaus
+il piano di gaus è un piano cartesiano dove la i viene rappresentata sulla delle ordinate (y); quindi per esempio avendo $z=3+4i$ avremo: 
+![[Pasted image 20241013152750.png]]
+se sei curioso [[piano di gaus]]
+
+Sempre con il piano di gaus possiamo ottenere la somma geometrica di due numeri complessi $z+w$, completando il parallelogramma come formano i due segmenti complessi e facendone il modulo (il modulo di un numero complesso restituisce la distanza tra quel punto e l'origine del piano): 
+![[Pasted image 20241013154605.png]]
+
+--------------

@@ -89,3 +89,39 @@ Avere una rete che restituisce $y$ ed una che restituisce $y_{min}$, ciò vuol d
 ![[Pasted image 20241008085413.png]]
 
 --------
+## Complemento a 2
+
+- **Cos'è:** Una tecnica più avanzata per rappresentare numeri negativi. Invertendo i bit e aggiungendo 1 al risultato, si facilita l'esecuzione di operazioni aritmetiche.
+- **Applicazioni:** Utilizzato nei moderni computer per rappresentare numeri negativi e per eseguire operazioni aritmetiche efficientemente, semplificando la progettazione hardware.
+
+- **Rappresentazione:** Un bit è dedicato al segno (0 per positivo, 1 per negativo). Gli altri bit rappresentano il valore assoluto.
+- **Esempio:** In una rappresentazione con 8 bit:
+    - **+5** = 00000101
+    - **-5** = 10000101
+
+### Complemento a 2
+
+- **Metodo:** Consente una rappresentazione più efficiente e facilita le operazioni aritmetiche.
+    
+- **Passaggi per ottenere il complemento a 2 di un numero binario:**
+    
+    1. **Inversione dei bit:** Converti 0 in 1 e viceversa.
+    2. **Aggiungi 1** al risultato dell'inversione dei bit.
+- **Esempio:** Rappresentazione di -5 in 8 bit:
+    
+    1. **5 in binario:** 00000101
+    2. **Inversione dei bit:** 11111010
+    3. **Aggiungi 1:** 11111011 (complemento a 2 di -5)
+#### ex appunti:
+- Complemento ad 1: serve per rappresentare i numeri negativi nei byte, il primo bit diventa un bit di segno che se è a 0 significa che il numero è positivo, mentre se è a 1 significa che il numero è negativo; il complemento ad 1 si calcola convertendo tutti i bit di un byte nell'opposto, per esempio se abbiamo 00011011 diventerà 11100100
+- complemento a 2: si utilizza per rappresentare i negativi nel binario, daco che il complemento ad 1 è stato deprecato; si fa utilizzando il complemento ad 1 del byte di un numero assoluto ed aggiungendo 1; per riconvertirlo si controlla se il bit di segno è uguale ad 1 in tal caso si rifa il complemento ad 1 e si aggiunge dinuovo 1
+
+
+converti numero in binario -> 63=00111111 -> not del numero -> 11000000 -> aggiungo 1 -> 11000001 = -63
+
+per verificare: tolgo 1 e faccio il not del binario.
+
+---------
+
+## Tabella della verità
+lega quello che succede alle porte e nel circuito, all'uscita finale
