@@ -267,4 +267,83 @@ se sei curioso [[piano di gaus]]
 Sempre con il piano di gaus possiamo ottenere la somma geometrica di due numeri complessi $z+w$, completando il parallelogramma come formano i due segmenti complessi e facendone il modulo (il modulo di un numero complesso restituisce la distanza tra quel punto e l'origine del piano): 
 ![[Pasted image 20241013154605.png]]
 
---------------
+### Forma trigonometrica
+Chiamiamo argomento di z ( arg(z) ) di un numero complesso z appartenente all'insieme dei numeri complessi (escluso lo 0), la misura in radianti dell'angolo formato tra la semiretta passante per 0 e z ed il semiasse positivo reale.
+
+![[Pasted image 20241013204658.png]]
+
+quindi se la condizione $z\neq 0$ viene rispettata si può constatare che: $$z=\mid z\mid(\cos(arg(z))+i*sen(arg(z)))$$
+si chiama forma trigonometrica di un numero la scrittura di esso sotto la forma:
+$$z=p(\cos o +i*\cos o)$$
+dove $p>0$  e  $o \in \mathbb{R}$ ; in questo caso $p$ è il modulo di $z$ e $o$ ne è l'argomento.
+
+Per passare dalla forma algebrica alla trigonometrica, se abbiamo z diverso da 0, avremo che:
+$$p=\mid z\mid=\sqrt{ a^2+b^2 }$$
+e calcoleremo coseno e seno con la seguente formula:
+$$\begin{cases}
+\cos o = \frac{\mathbb{R}_{z}}{\mid z\mid}=\frac{a}{\sqrt{ a^2+b^2 }} \\
+\sin o = \frac{\mathbb{I}_{z}}{\mid z\mid}=\frac{b}{\sqrt{ a^2+b^2 }}
+\end{cases}$$
+ovviamente l'argomento di z deve essere compreso tra 0 e $2\pi$.
+
+>NOTA BENE:
+-  $\bar{z} = \rho \left(\cos(-\theta)+i\sin(-\theta) \right)$
+- $\frac{1}{z} = \frac{1}{\rho}\left(\cos(-\theta)+i\sin(-\theta) \right)$
+- $z^n=\rho^n \left(\cos(n*\theta)+i\sin(n*\theta) \right)$
+- se $w^n=z$ allora $R^n=\rho \to R=\rho^\frac{1}{n}$
+- $z=\rho(\cos(\theta)+i\sin(\theta))$ , $w=R(\cos(\phi)+i\sin(\phi))$ allora: $$z*w=(\rho *R)(\cos(\theta+\phi)+i\sin(\theta+\phi))$$
+- allo stesso modo avendo $\frac{z}{w}$ avremo: $$z*w=\frac{\rho}{R}(\cos(\theta-\phi)+i\sin(\theta-\phi))$$
+Moltiplicare due numeri complessi, come $w$ e $z$, comporta una rotazione e un cambiamento di dimensione sul piano complesso. Se $w$ ha modulo 1, il prodotto $wz$ risulta in una rotazione di $z$ attorno all'origine di un angolo pari a $\arg(w)$. Ad esempio, moltiplicare $z$ per $i$ lo ruota di un quarto di giro in senso antiorario. Se $w$ ha un modulo diverso da 1, oltre alla rotazione, $z$ viene anche dilatato o compresso in base al modulo di $w$.
+
+#### Radici N-esime di un numero complesso
+le radici n-esime di un numero complesso si ottengono "sparpagliando" $n$ numeri complessi lungo una circonferenza, tutti con lo stesso modulo, ma con angoli differenti che si trovano aggiungendo multipli di $2π/n$.
+
+esempio:
+![[Pasted image 20241014230921.png]]
+
+### Teorema fondamentale dell'algebra
+Il **Teorema Fondamentale dell'Algebra** afferma che ogni polinomio di grado $n$ con coefficienti complessi ha esattamente $n$ soluzioni (dette radici) nei numeri complessi, tenendo conto delle loro molteplicità. Questo significa che se hai un polinomio del tipo $Pn(z)$, dove $z$ è un numero complesso e il grado del polinomio è $n$, ci saranno $n$ soluzioni complesse per l'equazione $Pn(z)=0$.
+
+Ora, se il polinomio ha **coefficienti reali** (anziché complessi), succede una cosa interessante. Se una radice del polinomio è un numero complesso non reale (cioè appartiene ai numeri complessi, ma non ai numeri reali), allora anche il **coniugato** di quel numero complesso sarà una radice del polinomio.
+Questo accade perché i polinomi a coefficienti reali hanno una proprietà simmetrica rispetto ai numeri complessi: se una radice è complessa, anche il suo coniugato deve esserlo, con la stessa molteplicità.
+
+### Principio del minimo intero
+il principio del minimo intero esprime il buon ordinamento dei numeri naturali.
+Applicando il teorema di esistenza dell'estremo superiore si dimostra che ogni insieme $\mathbb{A} \subseteq \mathbb{N}$ (ovvero A sottoinsieme di N) che è non vuoto ha un minimo.
+
+### Principio di induzione
+Il principio di induzione serve a dare senso alle definizioni ricorsive, ed è utile nella verifica di propietà che dipendono da un numero naturale.
+Se abbiamo un insieme $\mathbb{S} \subseteq \mathbb{N}$ che verifica:
+- $0 \in \mathbb{S}$
+- $\forall n \in \mathbb{S}\implies n+1 \in \mathbb{S}$
+allora $\mathbb{S}=\mathbb{N}$
+
+esempio:
+mettendo che volessimo definire il fattoriale (!), sappiamo che la funzione $f:\mathbb{N}\to \mathbb{N}$ e data da:
+$$\begin{cases}
+f(0)=1 \\
+f(n+1)=(n+1)*f(n) \text{ se } n\geq o
+\end{cases}$$
+quindi come possiamo vedere verificando la funzione $f(n_{0})$ e la funzione di $f(n)$, possiamo verificare la funzione di $f(n+1)$ semplicemente paragonandola alla funzione $f(n)$ già verificata:
+$$f(n)=1*2*3*4*\dots*n$$
+$$f(n+1) \text{ non verificata, ma } f(n)*(n+1) \text{ è verifcata }$$
+$$\text{di conseguenza anche } f(n+1) \text{ viene verificata} $$
+#### Principio di induzione applicato ai predicati
+Il principio di induzione applicato ai predicati viene utilizzato per dimostrare la verità di una proposizione $P(n)$, definita su numeri naturali, per ogni $n∈ \mathbb{N}$. Vediamo di spiegare come viene applicato.
+
+Il principio di induzione dice che, se si hanno le seguenti due proprietà per un predicato $P(n)$:
+
+1. **Base**: $P(0)$ è vero (ossia la proposizione è vera per il caso base, solitamente $n=0$).
+2. **Passo induttivo**: per ogni $n \in \mathbb{N}$, se $P(n)$ è vero, allora risulta vero anche $P(n+1)$.
+
+Se queste due proprietà sono soddisfatte, possiamo concludere che $P(n)$ è vero per ogni $n \in \mathbb{N}$. Questo procedimento funziona perché la base $P(0)$ fornisce il punto di partenza, e il passo induttivo ci permette di estendere la verità del predicato a tutti i numeri naturali.
+
+##### Ricaviamo il principio di induzione dal principio del minimo intero
+- **principio del minimo intero**: ogni sottoinsieme non vuoto dei numeri naturali ha un elemento minimo.
+- Vogliamo dimostrare che un proposizione $P(n)$ è vera per un valore iniziale $n_{0}$, e se per ogni $n \in \mathbb(N)$ la verità $P(n)$ implica la verità $P(n+1)$, allora $P(n)$ è vera per tutti i numeri naturali.
+- Supponiamo per assurdo che esista un valore $n$ per cui $P(n)$ non è vero, e prendiamo in considerazione l'insieme $S=\{n \in N | P(n) \text{ è falso}\}$, di conseguenza sappiamo che $S$ non è vuoto perché vi è almeno un elemento $n$.
+- Utilizzando il principio del minimo intero su $S$ (insieme non vuoto di $N$), sappiamo che esiste un numero minimo $m \in S$ tale che $P(m)$ è falso, ma per ogni $k<m, P(k)$ è vero.
+- Sapendo che $P(n_{0})$, dove $n_{0}$ è il valore iniziale, è verificato, e quindi non può essere $m=n_{0}$ ,di conseguenza $m>n_{0}$
+- ora che sappiamo che $P(m-1)$ è vero, in quanto $m$ è il valore minimo per cui $P(m)$ risulta falso. Ma dall'ipotesi del principio di induzione, se $P(m-1)$ è verificato, allora anche $P(m-1+1)=P(m)$ dovrebbe esserlo; ciò va cosi a contraddire la scelta di $m$ come elemento minimo di $S$
+- Quindi la nostra assunzione iniziale, ovvero che esiste un numero minimo $m$ tale che $P(m)$ sia falso, porta ad una contraddizione; portandoci cosi a concludere che $S$ sia un insieme vuoto, e che quindi non esistono numeri naturali $n$ per cui $P(n)$ sia falso; di conseguenza $P(n)$ è verificato per tutti i naturali.
+In conclusione riusciamo a derivare il principio di induzione dal principio del minimo intero per assurdo; ovvero che se una proprietà $P$ fosse falsa per un qualunque numero naturale $n$, esisterebbe un numero naturale minimo per cui la proprietà è falsa, ma ciò porterebbe ad una contraddizione con l'ipotesi del passo induttivo. Di conseguenza la proprietà deve essere verificata per tutti i naturali.

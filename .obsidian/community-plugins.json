@@ -4,11 +4,9 @@
   "better-export-pdf",
   "calendar",
   "code-emitter",
-  "colored-text",
   "cmdr",
   "dataview",
   "editing-toolbar",
-  "cm-editor-syntax-highlight-obsidian",
   "highlightr-plugin",
   "obsidian-icon-folder",
   "obsidian-icons-plugin",
@@ -20,5 +18,6 @@
   "obsidian-release-timeline",
   "obsidian-style-settings",
   "obsidian-banners",
-  "fit"
+  "fit",
+  "cm-editor-syntax-highlight-obsidian"
 ]
