@@ -347,3 +347,34 @@ Se queste due proprietà sono soddisfatte, possiamo concludere che $P(n)$ è ver
 - ora che sappiamo che $P(m-1)$ è vero, in quanto $m$ è il valore minimo per cui $P(m)$ risulta falso. Ma dall'ipotesi del principio di induzione, se $P(m-1)$ è verificato, allora anche $P(m-1+1)=P(m)$ dovrebbe esserlo; ciò va cosi a contraddire la scelta di $m$ come elemento minimo di $S$
 - Quindi la nostra assunzione iniziale, ovvero che esiste un numero minimo $m$ tale che $P(m)$ sia falso, porta ad una contraddizione; portandoci cosi a concludere che $S$ sia un insieme vuoto, e che quindi non esistono numeri naturali $n$ per cui $P(n)$ sia falso; di conseguenza $P(n)$ è verificato per tutti i naturali.
 In conclusione riusciamo a derivare il principio di induzione dal principio del minimo intero per assurdo; ovvero che se una proprietà $P$ fosse falsa per un qualunque numero naturale $n$, esisterebbe un numero naturale minimo per cui la proprietà è falsa, ma ciò porterebbe ad una contraddizione con l'ipotesi del passo induttivo. Di conseguenza la proprietà deve essere verificata per tutti i naturali.
+
+-------------
+
+## Calcolo combinatorio
+### Fattoriale
+Il fattoriale (!) è un operazione ricorsiva di moltiplicatoria, viene definita in $f:\mathbb{N}\to\mathbb{N}$ attraverso appunto alla formula:$$!n=\prod_{i=1}^{n}{i} \implies !n=1*2*\dots*n$$
+### Permutazione
+Una permutazione di $n$ oggetti $P(n)$ è il numero di possibili combinazioni nelle quali possiamo sistemare questi $n$ oggetti; e viene calcolato tramite il fattoriale.
+
+![[Pasted image 20241015085127.png]]
+
+### Nozioni di disposizione
+Presi due $k,n \in\mathbb{N}$ dove $1\leq k\leq n$, le disposizioni di $n$ oggetti, $k$ alla volta, e viene segnato in questo modo: $D_{n,k}$, o anche coefficiente binominale $\binom{n}{k}$ ovvero tutte le varie possibili combinazioni di di $k$ oggetti scelti tra $n$ oggetti; tale valore viene calcolato con la formula: $$D_{n,k} = \frac{n!}{(n-k)!}$$
+### Combinazioni
+Volendo invece prendere le combinazioni di $n$ oggetti presi $k$ alla volta, ovvero il numero di modi diversi in cui posso scegliere $k$ oggetti in un insieme di $n$ oggetti, dobbiamo partire da $D_{n,k}$ che è uguale al prodotto tra le combinazioni che cerchiamo e le permutazioni di k oggetti: $$D_{n,k}=C_{n,k}*P_{k}$$
+di conseguenza possiamo ricavare la formula inversa per le combinazioni di $k$ in $n$: $$C_{n,k}=\frac{D_{n,k}}{P_{k}}= \frac{\frac{n!}{(n-k)!}}{k!}$$
+### Binomio di newton
+$$\forall a,b \in \mathbb{R} , \forall n \in \mathbb{N}^{+} \to (a+b)^n=\sum_{k=0}^{n}\binom{n}{k}*a^{n-k}*b^k$$
+
+#### Proprietà dei coefficenti binomiali
+- $\binom{n}{0}=1=\binom{n}{n}$
+- $\binom{n}{n-k}=\binom{n}{k}$
+- proprietà di tartaglia: $\binom{n+1}{k}=\binom{n}{k}+\binom{n}{k-1}$
+
+### Probabilità finita
+ovvero le probabilità che un evento favore accada, in n possibilità di eventi possibili, tale valore è dato proprio dal rapporto di quest'ultimi: $$P=\frac{\text{eventi favorevoli}}{\text{eventi possibili}}\to P \in Q \cap [0,1]$$
+l'evento complementare è il risultato della sottrazzione tra $1$, ovvero "evento che accade con assoluta certezza" e la probabilità dell'evento favorevole, e ci va indicare le probabilità che l'evento favorevole non avvenga:
+$$P(A^{c})=1-P(A)$$
+#### Indipendenza degl'eventi
+significa che la probabilità che avvenga un evento favorevole A, sapendo che si verifica un altro evento favorevole B, non cambia:
+$$P(A \mid B)=P(A)$$quindi per eventi indipendenti tra loro, la probabilità dell'intersezione $P(A\cap B)$ è il prodotto delle probabilità: $$P(A\cap B)=P(A)*P(B)$$

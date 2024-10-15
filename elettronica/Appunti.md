@@ -125,3 +125,25 @@ per verificare: tolgo 1 e faccio il not del binario.
 
 ## Tabella della verità
 lega quello che succede alle porte e nel circuito, all'uscita finale
+
+-----
+## concetto di indifferenza
+Nell'algebra booleana, l'indifferenza (o condizione di don't care) si riferisce a una situazione in cui il valore di una variabile logica non influisce sull'uscita finale della funzione logica. Questi valori possono essere utilizzati per semplificare espressioni logiche, poiché possono essere assegnati a 0 o 1 per ottenere la forma più semplice della funzione.
+
+## Ottimizzazione della rete $\to$ rete ottima
+meno ritardo
+meno gate
+meno ingressi per gate
+
+### Espressione normale
+parliamo di espressioni sp o ps
+
+- **Espressione minima**: la forma più semplificata di una funzione booleana, che usa il minor numero possibile di termini e variabili.
+- **Rete di costo minimo**: una rete logica che realizza una funzione booleana con il minor numero possibile di porte logiche o connessioni.
+- **Implicante primo**: un termine che non può essere ulteriormente semplificato e che copre almeno una combinazione di valori di verità della funzione.
+- **Formula duale dell'implicante primo**: si ottiene scambiando AND con OR e viceversa nella forma canonica dell'implicante primo.
+- implicato primo: somma di n o meno varibili della funzione in forma vera o negata, dalla quale non è possibile eliminare alcun letterale senza perdere la sua propietà di implicare la fuinzione ovvero di valere 0
+- espressione irridondante: qualsiasi espressione dalla quale non è possibilie eliminare termini senza invalidare l'equivalenza con l'espressione di partenza
+
+## Mappa di karnau
+![[Pasted image 20241015095538.png]]ogni casella è un mintermine
