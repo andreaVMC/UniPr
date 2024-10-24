@@ -19,5 +19,7 @@
   "obsidian-style-settings",
   "obsidian-banners",
   "fit",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "latex-ocr",
+  "obsidian-tikzjax"
 ]

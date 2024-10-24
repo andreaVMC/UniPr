@@ -33,5 +33,29 @@ Riscrivendo la nozione di estremi di funzioni per le successioni, deduciamo che 
 
 ### Limite di successioni
 una successione ha limite $l \in \overline{R}$ per $a_{n}$ che tende ad $l$, se risulta:$$\forall V \in I_{l}, \exists \overline{n}\in N: \forall n\geq\overline{n},a_{n} \in V$$ in altre parole: a partire da un certo punto $\overline{n}$, tutti i termini successivi della successione si trovano dentro un qualsiasi intorno del limite, cioè sono sempre più vicini al valore di limite man mano che la successione progredisce.
-Per esempio avendo la successione $a_{n}=2^n$ vediamo come man mano che la $n$ cresce i valori della successione tendono a $+\infty$:
+Per esempio avendo la successione $a_{n}=2^n$ vediamo come man mano che la $n$ cresce i valori della successione tendono(divergono) a $+\infty$:
 ![[Pasted image 20241019174236.png]]
+
+ma esistono anche successioni senza limite, infatti se una successione ha un limite quest'ultimo deve essere unico; per esempio la successione $a_{n} = -1^n$ non ha limite, in quanto in base alla $n$, la successione tende a $+1$ e a $-1$
+
+### Convergenza e divergenza
+una successione diverge quando tende all'infinito (sia positivamente che negativamente); mentre si dice che converge quando tende ad un limite $l$ definito, seguendo le seguenti regole:
+
+- una successione diverge a $+ \infty$ se per ogni $M$ reale esiste un $\overline{n}$ tale che $n\geq\overline{n}$  e che $a_{n}>M$: $$\forall M \in R, \exists\overline{n}:\forall n\geq\overline{n},a_{n}>M$$
+- una successione diverge a   $- \infty$ se per ogni $N$ reale esiste un $\overline{n}$ tale che $n\geq\overline{n}$  e che $a_{n}<N$: $$\forall N \in R, \exists\overline{n}:\forall n\geq\overline{n},a_{n}<N$$
+- una successione converge ad un limite $l$  se per ogni $H,K$ (estremi dell'intorno) reali tali che $H<l<K$ esista un $\overline{n}$ tale che per ogni $n\leq\overline{n}$  e che $H<a_{n}<K$ :$$\forall H,K \in R : H<l<K, \exists\overline{n}:\forall n\geq\overline{n},H<a_{n}<K$$
+- una successione può essere equivalente se$$\forall \varepsilon>0,\exists\overline{n}:\forall n\geq\overline{n},\mid a_{n}-l\mid<\varepsilon$$ la quale si dimostra notando che per ogni $\varepsilon>0$ allora $\mid a_{n} -l\mid<\varepsilon\Leftrightarrow l-\varepsilon<a_{n} \Leftrightarrow a_{n} \in I_{\varepsilon}(l)$ e quindi scegliendo l'intorno di raggio $\varepsilon$ di $l$ per ogni $\varepsilon>0$ avremo l'equivalenza di successione
+### Teorema sul limite delle successioni monotone
+**enunciato**: ogni successione monotona ha un limite $l \in \overline{R}$, se $a_{n}$ è crescente il suo limite è uguale al suo estremo superiore $sup_{n}(a_{n})$ mentre se la successione è decrescente, il suo limite sarà uguale al suo estremo inferiore $inf_{n}(a_{n})$
+
+**<font color="#ff0000">dimostrazione</font>:**  concentrandoci sul caso di una successione $a_{n}$ crescente (caso analogo sarà per le decrescenti), possiamo notare che se il limite $l$ della successione è uguale al massimo della successione stessa $l=sup_{n}(a_{n})$ allora di conseguenza avremo che $a_{n}\leq l$ e ciò vale per ogni $n$; ora teniamo in considerazione di avere una $\varepsilon>0$ e che esista un $\overline{n}$  tale che $a_{\overline{n}}>l-\varepsilon$ 
+![[Pasted image 20241024231214.png]]
+Quindi, essendo la successione crescente, avremo che per ogni $n\geq\overline{n}$  e quindi $a_{n}\geq a_{\overline{n}}$; in definitiva avremo che per ogni $n>\overline{n}$: $$l-\varepsilon <a_{\overline{n}}\leq a_{n}<l<l+\varepsilon$$
+e dunque $\mid a_{n}-l\mid<\varepsilon$ da qui torniamo alla dimostrazione della convergenza/equivalenza di successione citata sopra.
+
+>una successione converge ad un limite $l$  se per ogni $H,K$ (estremi dell'intorno) reali tali che $H<l<K$ esista un $\overline{n}$ tale che per ogni $n\leq\overline{n}$  e che $H<a_{n}<K$ :$$\forall H,K \in R : H<l<K, \exists\overline{n}:\forall n\geq\overline{n},H<a_{n}<K$$
+  una successione può essere equivalente se$$\forall \varepsilon>0,\exists\overline{n}:\forall n\geq\overline{n},\mid a_{n}-l\mid<\varepsilon$$ la quale si dimostra notando che per ogni $\varepsilon>0$ allora $\mid a_{n} -l\mid<\varepsilon\Leftrightarrow l-\varepsilon<a_{n} \Leftrightarrow a_{n} \in I_{\varepsilon}(l)$ e quindi scegliendo l'intorno di raggio $\varepsilon$ di $l$ per ogni $\varepsilon>0$ avremo l'equivalenza di successione
+>
+
+
+--------------

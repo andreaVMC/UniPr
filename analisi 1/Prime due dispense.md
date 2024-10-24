@@ -210,8 +210,8 @@ In totale gli assiomi dell'insieme dei numeri razionali $\mathbb{R}$ è composto
 >Assioma: Principio evidente per sé, e che perciò non ha bisogno di esser dimostrato, posto a fondamento di una teoria deduttiva
 
 Per definire l'insieme dei numeri reali $\mathbb{N}$ bisogna definire un ==12° assioma, detto Assioma di Dedekind==, che dice che per ogni $\mathbb{A},\mathbb{B}\subset \mathbb{R}$ tali che $\forall a \in A, b \in B, a\leq b$ allora esiste un elemento $c \in \mathbb{R}$ tale da separare i due insiemi, e quindi: $\forall a \in \mathbb{A}, b \in \mathbb{B} , a\leq c\leq b$, questo viene chiamato anche ==assioma dell'elemento separatore==.
-![[assimo elemento separatore]]
 
+<<<<<<< HEAD:analisi 1/Prime due dispense.md
 $\sqrt{ 2 }$ non è razionale quindi non è seperatore, per tanto è nell'insieme A o in B, sistenendo:
 $\sqrt{ 2 } \in \mathbb{R}$ e che esiste un $c \in \mathbb{Q}^{+} : c^2<2$ allora:$$\exists n \in \mathbb{N}^+:\left( c+ \frac{1}{n} \right)^2<2$$
 ciò vuol dire che c è un razionale positivo, il quale il quadrato è minore di 2, ma aggiungendo a c un infinitesimo e ne facciamo il quadrato, avremo sempre un numero <2 ma più vicino, quindi non esiste un numero separatore razionale.
@@ -384,3 +384,5 @@ $$P(A^{c})=1-P(A)$$
 #### Indipendenza degl'eventi
 significa che la probabilità che avvenga un evento favorevole A, sapendo che si verifica un altro evento favorevole B, non cambia:
 $$P(A \mid B)=P(A)$$quindi per eventi indipendenti tra loro, la probabilità dell'intersezione $P(A\cap B)$ è il prodotto delle probabilità: $$P(A\cap B)=P(A)*P(B)$$
+=======
+>>>>>>> 76d67acbe82d6bddb4cb324affa23cc031f863e5:analisi 1/Appunti.md
